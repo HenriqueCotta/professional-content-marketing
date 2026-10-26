@@ -1,10 +1,12 @@
 ---
 created_at: 2026-10-21
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.0.1
 ---
 
 # Plan
+
+Esta página é o guia do tipo Plan. Seu frontmatter descreve o guia; a seção Properties descreve os registros produzidos. Os destinos abaixo seguem a [convenção de raiz do PCM](../../Architecture.md#guia-template-e-registro-de-trabalho).
 
 ## Finalidade e localização
 
@@ -32,7 +34,7 @@ O núcleo não inclui `created_at`. Datas e versão desconhecidas ficam vazias. 
 
 - **Plano inicial:** registre objetivo, contexto, prioridades e limites. Preserve as escolhas de direção que orientaram o plano quando isso for necessário para compreendê-lo depois.
 - **Como avaliar:** combine antes da execução a pergunta de avaliação; as medidas escolhidas, seu significado, unidade ou fórmula e fonte; a janela de coleta e comparação; os critérios para interpretar o resultado; e os limites conhecidos. Inclua o denominador de uma taxa quando houver. Esses critérios pertencem ao próprio plano e são escolhidos pela pessoa; não existem métricas ou metas obrigatórias.
-- **Conteúdos previstos:** vincule ideias e posts selecionados, explicando a escolha e os critérios de sequência. A ordem operacional atual fica nos posts via `queue_order` e no [Publishing Control](../../../Publishing%20Control.md); siga [Post](../Posts/Post.md#fila-de-publicação), sem manter uma segunda fila manual sincronizada no plano.
+- **Conteúdos previstos:** vincule ideias e posts selecionados, explicando a escolha e os critérios de sequência. A ordem operacional atual fica nos posts via `queue_order` e no [Publishing Control](../../../Publishing%20Control.md); siga o [guia de Post](../Posts/Post.md#fila-de-publicação), sem manter uma segunda fila manual sincronizada no plano.
 - **Acompanhamento e alterações datadas:** registre execução, pendências e mudanças com data e motivo.
 - **Evidências:** aponte para os dados em `Posts/<post>/Analytics/` e as interpretações individuais em `Reviews/`. O plano compara os registros pertinentes, sem absorver todas as coletas.
 - **Avaliação do plano:** confronte o realizado com o objetivo e os critérios iniciais. Diferencie observação, interpretação e limitações; uma medida indisponível não significa zero.

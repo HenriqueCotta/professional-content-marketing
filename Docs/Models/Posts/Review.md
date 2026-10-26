@@ -1,14 +1,16 @@
 ---
 created_at: 2026-10-21
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.0.1
 ---
 
 # Review
 
+Esta página é o guia do tipo Review. Seu frontmatter descreve o guia; a seção Properties descreve os registros produzidos. Os destinos abaixo seguem a [convenção de raiz do PCM](../../Architecture.md#guia-template-e-registro-de-trabalho).
+
 ## Finalidade e localização
 
-Uma review interpreta os dados de um [Post](Post.md) para responder a uma pergunta explícita. Fica em `Posts/<Nome do post>/Reviews/` e aponta para os snapshots efetivamente analisados. Ela não substitui os dados brutos nem significa revisão do texto antes da publicação.
+Uma review interpreta os dados de um post para responder a uma pergunta explícita. A publicação avaliada é documentada conforme o [guia de Post](Post.md). A review fica em `Posts/<Nome do post>/Reviews/` e aponta para os snapshots efetivamente analisados. Ela não substitui os dados brutos nem significa revisão do texto antes da publicação.
 
 Use `Day X - Review.md` quando a idade estiver comprovada. X é a idade correspondente à última captura, de maior `captured_at` entre os snapshots utilizados, segundo a [regra de Day X em Analytics Snapshot](Analytics%20Snapshot.md). Identifique a janela e todas as coletas relevantes; a análise pode incluir períodos anteriores. A data em que a review foi escrita ou editada não redefine a idade dos dados.
 

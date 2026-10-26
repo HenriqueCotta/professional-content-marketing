@@ -1,7 +1,7 @@
 ---
 created_at: 2026-10-20
 updated_at: 2026-10-21
-version: 1.0.0
+version: 1.0.1
 ---
 
 # Como organizar a estratégia
@@ -29,7 +29,7 @@ Os números e exports continuam em Analytics de cada post; interpretações indi
 
 Se os critérios mudarem durante a execução, registre data, motivo e aplicação, preservando a definição inicial. Comparar planos exige conferir definição, unidade, fonte e janela das medidas; usar o mesmo nome não garante comparabilidade.
 
-O plano explica os critérios de seleção e a sequência pretendida. A ordem operacional atual fica em `queue_order` nas notas dos posts e aparece no [Publishing Control](../Publishing%20Control.md), conforme [Post](Models/Posts/Post.md#fila-de-publicação). Não mantenha uma segunda fila manual sincronizada no plano; seus links preservam a seleção e o contexto relevantes ao acompanhamento. A fila pode mudar conforme o plano, com manutenção manual e filtros escolhidos pela pessoa.
+O plano explica os critérios de seleção e a sequência pretendida. A ordem operacional atual fica em `queue_order` nas notas dos posts e aparece no [Publishing Control](../Publishing%20Control.md), conforme [Post](Models/Posts/Post.md#fila-de-publicação). Não mantenha uma segunda fila sincronizada no plano; seus links preservam a seleção e o contexto relevantes ao acompanhamento. A fila pode mudar conforme o plano; a pessoa ou a IA encarregada atualiza os valores. Filtros e mudanças de estado não reorganizam as posições sozinhos.
 
 ## Executar, avaliar e decidir
 

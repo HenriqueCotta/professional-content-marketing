@@ -1,16 +1,18 @@
 ---
 created_at: 2026-10-21
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.0.1
 ---
 
 # Analytics Snapshot
 
+Esta página é o guia do tipo Analytics Snapshot. Seu frontmatter descreve o guia; a seção Properties descreve os registros produzidos. Os destinos abaixo seguem a [convenção de raiz do PCM](../../Architecture.md#guia-template-e-registro-de-trabalho).
+
 ## Finalidade e localização
 
-Um snapshot registra observações de desempenho de um [Post](Post.md), com sua origem e janela. A nota autoral fica em `Posts/<Nome do post>/Analytics/`. Preserve exports e outros dados brutos em `Analytics/Raw/`, mantendo os nomes e os arquivos originais.
+Um snapshot registra observações de desempenho de um post, com sua origem e janela. A publicação observada é documentada conforme o [guia de Post](Post.md). A nota autoral do snapshot fica em `Posts/<Nome do post>/Analytics/`. Preserve exports e outros dados brutos em `Analytics/Raw/`, mantendo os nomes e os arquivos originais.
 
-Registre cada coleta sem sobrescrever os originais de outra. Este documento guarda fatos e cálculos; a interpretação pertence à [Review](Review.md). Uma coleta nova não exige automaticamente uma review.
+Registre cada coleta sem sobrescrever os originais de outra. O snapshot guarda fatos e cálculos; a interpretação fica em uma review, conforme o [guia de Review](Review.md). Uma coleta nova não exige automaticamente uma review.
 
 ### Nome e cálculo de Day X
 

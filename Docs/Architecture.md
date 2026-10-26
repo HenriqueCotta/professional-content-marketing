@@ -1,12 +1,22 @@
 ---
 created_at: 2026-10-20
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.1.1
 ---
 
 # Arquitetura do modelo
 
 Este guia define áreas, destinos e responsabilidades. [Workflow](Workflow.md) explica a rotina; [Sources](Sources.md), a pesquisa e reutilização; [Strategy](Strategy.md), a relação entre direção, planos, experimentos e decisões. Cada guia em Models reúne o contrato do respectivo registro.
+
+O PCM é um conjunto de arquivos que uma IA com acesso pode consultar e manter. O Obsidian é uma opção para visualizar e editar esses mesmos arquivos, dentro de outro vault ou como vault independente. [Access and Sync](Access%20and%20Sync.md) trata das formas de acesso e sincronização; elas não mudam a responsabilidade dos registros.
+
+## Guia, template e registro de trabalho
+
+`Docs/Models/` contém os guias dos tipos: finalidade, destino, Properties e preenchimento. `Templates/` contém o conteúdo inserível usado para iniciar um registro. O registro de trabalho contém as informações da pessoa e fica no destino definido pelo seu guia; consultar um guia não transforma o caminho desse guia no destino do registro.
+
+A raiz do PCM é a pasta que contém `AGENTS.md`. Os destinos apresentados nos guias partem dessa raiz, mesmo quando o PCM está dentro de outro repositório ou vault. Um caminho subordinado, como `Assets/` de um post, parte do pacote explicitamente indicado. Os links Markdown da documentação, por sua vez, são relativos ao arquivo que contém o link.
+
+Um guia pode precisar de atualização quando uma convenção da cópia pessoal mudar. Essa manutenção documental é diferente de preencher nele um plano, uma ideia ou outro registro de trabalho. Os metadados no topo do guia descrevem a página; a seção Properties define os campos do registro produzido.
 
 ## Estrutura do módulo
 
@@ -15,12 +25,13 @@ Professional Content Marketing/
 ├── README.md                       # entrada e índice de guias
 ├── AGENTS.md                       # roteamento para IA
 ├── Docs/
-│   ├── Getting Started.md          # primeiro uso e aplicação nativa
+│   ├── Getting Started.md          # primeiro trabalho com IA ou editor
+│   ├── Access and Sync.md          # acesso, sincronização e dispositivos
 │   ├── Architecture.md            # áreas e destinos
 │   ├── Workflow.md                # rotina
 │   ├── Sources.md                 # pesquisa e reutilização
 │   ├── Strategy.md                # processo estratégico
-│   ├── AI Guide.md                # colaboração com IA
+│   ├── AI Guide.md                # execução e colaboração com IA
 │   └── Models/
 │       ├── Shared/
 │       │   ├── Common.md
@@ -72,7 +83,7 @@ Pastas vazias podem conter `.gitkeep` para existir no Git. Direction e Visual Id
 | Posts | Produção e histórico de cada publicação, dados e avaliações individuais. |
 | Publishing Control | Visão configurável da fila, lendo a ordem nas próprias notas dos posts. |
 | Visual Identity | Escolhas visuais vigentes, definidas pela pessoa, numa nota atualizada no lugar. |
-| Templates | Conteúdo inserível; não contém os guias de documentação. |
+| Templates | Conteúdo para gerar registros pela IA ou inserir no editor; os guias ficam em Docs/Models. |
 | Docs/Models | Campos, estados, estrutura e controle do template de cada tipo. |
 
 Shared agrupa documentação que cruza domínios, com aplicação explícita no guia. [Shared/Local Source](Models/Shared/Local%20Source.md) serve às notas autorais em Sources de ideias e posts. [Common](Models/Shared/Common.md) reúne orientações gerais pequenas, aplicadas conforme o contexto. Shared é uma área documental, não uma biblioteca de materiais do usuário.

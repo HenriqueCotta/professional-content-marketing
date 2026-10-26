@@ -1,16 +1,20 @@
 ---
 created_at: 2026-10-21
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.0.3
 ---
 
 # Post
+
+Esta página é o guia do tipo Post. Seu frontmatter descreve o guia; a seção Properties descreve os registros produzidos. Os destinos abaixo seguem a [convenção de raiz do PCM](../../Architecture.md#guia-template-e-registro-de-trabalho).
 
 ## Finalidade e localização
 
 Um post registra a produção de uma publicação concreta e preserva o texto efetivamente publicado. Crie seu pacote em `Posts/<Nome do post>/<Nome do post>.md`, sem prefixo de data. A intenção de produzir a publicação determina essa criação, não o tamanho da ideia.
 
 O trabalho pode partir de nenhuma, uma ou várias ideias. Quando existirem, mantenha links para elas como origem do raciocínio, sem copiar seus pacotes ou herdar automaticamente todas as suas referências.
+
+A pessoa pode delegar a redação inteira ou escolher outra divisão do trabalho; este modelo não exige coescrita, perguntas ou aprovação de cada trecho. Consulte [Participação e delegação](../../AI%20Guide.md#participação-e-delegação) para ajustar a execução ao pedido e ao contexto.
 
 ## Properties e estados
 
@@ -42,7 +46,7 @@ Agendar um conteúdo pronto mantém `ready` até a publicação. `review` não s
 
 O [Publishing Control](../../../Publishing%20Control.md) apresenta os valores dos próprios posts em uma Base nativa. O plano em vigor explica os critérios de seleção e a sequência desejada; a pessoa ou a IA, quando encarregada, registra a ordem escolhida nos posts. A documentação não atribui prioridade a conteúdos existentes.
 
-| Operação | Manutenção manual |
+| Operação | Atualização nos registros, pela pessoa ou IA encarregada |
 | --- | --- |
 | Incluir no fim | Preencha a próxima posição da fila atual. |
 | Inserir ou mover | Escolha a posição e ajuste os demais itens afetados para manter 1, 2, 3… sem empates. |
@@ -55,7 +59,7 @@ Os filtros adicionais, colunas e outras visões são escolhidos pela pessoa: por
 
 Na Base, os filtros de **All views** limitam a tabela aos pacotes de `Posts/` deste módulo e a posições numéricas inteiras positivas; os de **This view** definem o recorte de trabalho e podem variar entre visões. Em **Properties**, escolha as colunas; para preservar a sequência, mantenha `queue_order` crescente em **Sort**. A tabela fica vazia enquanto nenhum post tiver posição válida e um estado incluído na visão. Referências do Obsidian: [Bases](https://obsidian.md/help/bases) e [filtros e ordenação](https://obsidian.md/help/bases/views).
 
-Bases não faz renumeração, publicação ou agendamento. Mudar a posição altera só uma Property e não atualiza `updated_at`, conforme [Common](../Shared/Common.md#datas). Um filtro alterado não muda a nota. Na primeira utilização em outro vault, confira que `queue_order` está com tipo **Número** em Properties; valores vazios não selecionam o tipo por si só.
+Bases não faz renumeração, publicação ou agendamento. A pessoa pode pedir à IA que reorganize a fila; com escrita e autorização, ela pode fazer essa manutenção e conferir a sequência completa. Verifique os valores efetivamente registrados, inclusive nos itens ocultos por filtros. Mudar a posição altera só uma Property e não atualiza `updated_at`, conforme [Common](../Shared/Common.md#datas). Um filtro alterado não muda a nota. Na primeira utilização em outro vault, confira que `queue_order` está com tipo **Número** em Properties; valores vazios não selecionam o tipo por si só.
 
 ## Como preencher
 
@@ -73,7 +77,7 @@ Bases não faz renumeração, publicação ou agendamento. Mudar a posição alt
 
 Referências novas descobertas durante a produção pertencem ao trabalho do post. Não sincronize automaticamente essas descobertas de volta às ideias de origem. Material factual local fica em `Sources/`; material visual, em `Assets/`, com `Assets/Source/` para a origem editável da peça. Crie as áreas somente quando houver conteúdo.
 
-Os dados observados ficam em `Analytics/`, conforme [Analytics Snapshot](Analytics%20Snapshot.md). A interpretação individual fica em `Reviews/`, conforme [Review](Review.md). A nota principal pode apontar para esses registros sem duplicar suas métricas ou conclusões.
+Os dados observados ficam em `Analytics/`, conforme o [guia de Analytics Snapshot](Analytics%20Snapshot.md). A interpretação individual fica em `Reviews/`, conforme o [guia de Review](Review.md). A nota principal pode apontar para esses registros sem duplicar suas métricas ou conclusões.
 
 ## Template e controle
 

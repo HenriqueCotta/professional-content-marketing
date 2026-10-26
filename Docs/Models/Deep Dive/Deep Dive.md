@@ -1,10 +1,12 @@
 ---
 created_at: 2026-10-21
-updated_at: 2026-10-21
-version: 1.0.0
+updated_at: 2026-10-26
+version: 1.0.1
 ---
 
 # Deep Dive
+
+Esta página é o guia do tipo Deep Dive. Seu frontmatter descreve o guia; a seção Properties descreve os registros produzidos. Os destinos abaixo seguem a [convenção de raiz do PCM](../../Architecture.md#guia-template-e-registro-de-trabalho).
 
 ## Finalidade e localização
 
