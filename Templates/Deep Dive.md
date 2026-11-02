@@ -4,12 +4,12 @@ updated_at:
 
 # {{title}}
 
-## Contexto e responsabilidades
+## Contexto e participação
 
-## Contribuições e resultados conhecidos
+## Relato da experiência
 
-## Evidências e origem das informações
+## Contribuições, resultados e aprendizados conhecidos
 
-## Limites das afirmações
+## Origem das informações e materiais relacionados
 
-## Questões a atualizar
+## Limites e questões a aprofundar

@@ -1,6 +1,6 @@
 ---
 created_at: 2026-10-20
-updated_at: 2026-10-23
+updated_at: 2026-11-02
 ---
 
 # Professional Content Marketing
@@ -30,6 +30,7 @@ Depois, faça seu pedido: desenvolver uma ideia a partir de anotações, prepara
 | --- | --- |
 | Começar com IA ou usar os arquivos diretamente | [Getting Started](Docs/Getting%20Started.md) |
 | Configurar acesso e sincronizar a cópia de trabalho | [Access and Sync](Docs/Access%20and%20Sync.md) |
+| Incorporar melhorias do modelo sem substituir o acervo pessoal | [Updating](Docs/Updating.md) |
 | Conferir a árvore, os destinos e as responsabilidades | [Architecture](Docs/Architecture.md) |
 | Retomar o fluxo da ideia à avaliação | [Workflow](Docs/Workflow.md) |
 | Organizar e consultar a fila de posts | [Publishing Control](Publishing%20Control.md) e [Post](Docs/Models/Posts/Post.md#fila-de-publicação) |

@@ -1,7 +1,7 @@
 ---
 created_at: 2026-10-20
-updated_at: 2026-10-26
-version: 1.1.1
+updated_at: 2026-11-02
+version: 1.2.0
 ---
 
 # Arquitetura do modelo
@@ -27,6 +27,7 @@ Professional Content Marketing/
 ├── Docs/
 │   ├── Getting Started.md          # primeiro trabalho com IA ou editor
 │   ├── Access and Sync.md          # acesso, sincronização e dispositivos
+│   ├── Updating.md                 # incorporar mudanças do modelo
 │   ├── Architecture.md            # áreas e destinos
 │   ├── Workflow.md                # rotina
 │   ├── Sources.md                 # pesquisa e reutilização
@@ -54,9 +55,7 @@ Professional Content Marketing/
 │       └── Visual Identity/
 │           └── Visual Identity.md
 ├── Templates/                     # doze arquivos inseríveis
-├── Deep Dive/
-│   ├── Work/
-│   └── Personal Projects/
+├── Deep Dive/                      # relatos em organização escolhida pela pessoa
 ├── Strategy/
 │   ├── Direction.md
 │   ├── Plans/
@@ -88,7 +87,9 @@ Pastas vazias podem conter `.gitkeep` para existir no Git. Direction e Visual Id
 
 Shared agrupa documentação que cruza domínios, com aplicação explícita no guia. [Shared/Local Source](Models/Shared/Local%20Source.md) serve às notas autorais em Sources de ideias e posts. [Common](Models/Shared/Common.md) reúne orientações gerais pequenas, aplicadas conforme o contexto. Shared é uma área documental, não uma biblioteca de materiais do usuário.
 
-Os relatos de experiências ficam em Work e Personal Projects. O [Publishing Control](../Publishing%20Control.md) contém uma Base embutida: os critérios de seleção pertencem ao plano; a ordem operacional é registrada em `queue_order` nas notas dos posts, conforme o [modelo de Post](Models/Posts/Post.md#fila-de-publicação). Filtros e colunas são adaptáveis. A Base lê os registros, sem criar outra lista manual ou guardar cópias de estados e métricas.
+Os relatos de experiências ficam em `Deep Dive/`, com arquivos, pastas e subpastas organizados conforme a necessidade da pessoa. O [guia de Deep Dive](Models/Deep%20Dive/Deep%20Dive.md) explica recortes, relações, preenchimento, entrevistas e atualização contínua; não há categorias internas fixas nem um arquivo obrigatório por empresa.
+
+O [Publishing Control](../Publishing%20Control.md) contém uma Base embutida: os critérios de seleção pertencem ao plano; a ordem operacional é registrada em `queue_order` nas notas dos posts, conforme o [modelo de Post](Models/Posts/Post.md#fila-de-publicação). Filtros e colunas são adaptáveis. A Base lê os registros, sem criar outra lista manual ou guardar cópias de estados e métricas.
 
 ## Pacotes e áreas auxiliares
 

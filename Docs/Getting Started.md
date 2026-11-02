@@ -1,7 +1,7 @@
 ---
 created_at: 2026-10-20
-updated_at: 2026-10-26
-version: 1.2.2
+updated_at: 2026-11-02
+version: 1.3.0
 ---
 
 # Primeiros passos
@@ -45,9 +45,11 @@ Com IA, diretamente nos arquivos ou combinando os dois, escolha o guia correspon
 - Um pensamento, pergunta ou argumento, mesmo curto: siga o [guia de Idea](Models/Ideas/Idea.md). Crie diretamente seu pacote e uma nota homônima em Ideas.
 - Uma publicação concreta: siga o [guia de Post](Models/Posts/Post.md). Pode começar diretamente ou usar ideias existentes.
 - Uma referência que decidiu preservar na biblioteca: siga o [guia de Library Source](Models/Source%20Library/Library%20Source.md).
-- Seu contexto profissional: siga o [guia de Deep Dive](Models/Deep%20Dive/Deep%20Dive.md), com experiências e evidências reais.
+- Sua trajetória e seu contexto: siga o [guia de Deep Dive](Models/Deep%20Dive/Deep%20Dive.md), organizando os relatos conforme suas necessidades.
 
 Preencha só o que conhece. Não crie exemplos de negócio para completar pastas. Se precisar de pesquisa, siga [Sources](Sources.md); fontes simples podem continuar como links na nota.
+
+Para construir ou aprofundar seu Deep Dive em conversa com uma IA, veja [Construir e aprofundar relatos em conversa](Models/Deep%20Dive/Deep%20Dive.md#construir-e-aprofundar-relatos-em-conversa). O guia reúne orientações para a entrevista, exemplos de abordagens e um pedido pronto para adaptar. Escrever diretamente ou combinar formas de trabalho continua possível.
 
 ## Quando houver uma direção e um plano
 
@@ -88,5 +90,7 @@ Para visualizar no Obsidian, confira **Settings → Core plugins → Bases** e a
 Parta da nota em andamento, confira seu próximo passo e siga apenas os links relevantes. Com IA, indique esse trabalho na retomada e use a mesma entrada em [AGENTS](../AGENTS.md).
 
 As convenções compartilhadas estão em [Common](Models/Shared/Common.md). Git pode preservar o histórico se configurado e usado com commits; o número de versão sozinho não reconstrói o conteúdo anterior. Você não precisa configurar Git para começar, mas deve saber qual histórico está efetivamente preservado.
+
+Para incorporar melhorias do PCM vanilla em uma cópia já utilizada, siga [Atualizar sua cópia](Updating.md). Criar um repositório a partir do template não estabelece sincronização automática com o modelo.
 
 Referências do recurso nativo: [Templates](https://obsidian.md/help/plugins/templates) e [Properties](https://obsidian.md/help/properties).

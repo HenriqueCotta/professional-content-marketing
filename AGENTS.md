@@ -1,6 +1,6 @@
 ---
 created_at: 2026-10-20
-updated_at: 2026-10-23
+updated_at: 2026-11-02
 ---
 
 # Instruções para a IA
@@ -19,6 +19,8 @@ As tarefas abaixo ajudam a encontrar os guias responsáveis; não formam um cat�
 | --- | --- |
 | Começar com IA ou usar os arquivos diretamente | [Getting Started](Docs/Getting%20Started.md) |
 | Disponibilizar os arquivos e sincronizar o trabalho | [Access and Sync](Docs/Access%20and%20Sync.md) |
+| Incorporar melhorias do modelo preservando a cópia pessoal | [Updating](Docs/Updating.md) |
+| Construir, entrevistar, aprofundar ou atualizar relatos da trajetória | [Deep Dive](Docs/Models/Deep%20Dive/Deep%20Dive.md) |
 | Resolver localização e responsabilidade das áreas | [Architecture](Docs/Architecture.md) |
 | Capturar, desenvolver, publicar e avaliar | [Workflow](Docs/Workflow.md) |
 | Criar ou alterar campos, estados e seções de um registro | Guia do tipo em Models, indicado no [README](README.md#modelos) |
