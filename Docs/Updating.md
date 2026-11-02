@@ -1,7 +1,7 @@
 ---
 created_at: 2026-11-02
 updated_at: 2026-11-02
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Atualizar sua cópia do PCM
@@ -10,15 +10,26 @@ O [PCM vanilla](https://github.com/HenriqueCotta/professional-content-marketing)
 
 Este guia trata de atualizações do modelo. Buscar e enviar o trabalho entre seus dispositivos é outra operação, explicada em [Access and Sync](Access%20and%20Sync.md).
 
+## Preparar uma cópia pessoal
+
+Para começar um acervo pessoal a partir do PCM público, o caminho recomendado é usar **Use this template → Create a new repository**, escolher sua conta e a visibilidade **Private**. Se quiser trabalhar no computador, clone esse repositório pessoal e abra a pasta no Obsidian ou no editor escolhido. As melhorias futuras do modelo são incorporadas pelo procedimento abaixo; criar a cópia pelo template não bloqueia atualizações, mas não as conecta automaticamente.
+
+Um fork de um repositório público também é público, e não é possível mudar isoladamente a visibilidade desse fork. Por isso, o fork direto do PCM público não é o caminho recomendado para guardar um acervo que você pretende manter privado. Veja [visibilidade de forks](https://docs.github.com/en/pull-requests/reference/forks#visibility-of-forks).
+
+Clonar é criar uma cópia local de um repositório já existente. Usar HTTPS, SSH, GitHub Desktop ou outro cliente não transforma um repositório criado por template em fork nem cria um vínculo de atualização com o vanilla. Clone seu repositório pessoal para buscar e enviar o seu trabalho; incorporar mudanças do modelo é uma operação distinta. Veja [clonar um repositório](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
 ## Identificar como sua cópia foi criada
 
 | Tipo de cópia | O que isso muda na atualização |
 | --- | --- |
 | Repositório criado com **Use this template** | Possui histórico próprio. Não recebe as mudanças do modelo automaticamente nem oferece a sincronização de um fork. |
 | **Fork** real do repositório | Compartilha o histórico de origem e pode buscar mudanças do upstream. A integração ainda precisa preservar as escolhas da cópia pessoal. |
+| Repositório independente duplicado preservando o histórico Git do modelo | Pode integrar commits com Git por compartilhar a base, mesmo sem ser um fork no GitHub. Isso exige preparar os remotos e conferir o histórico que será copiado; não é o que **Use this template** faz. |
 | Arquivos baixados ou copiados para outro repositório/vault | Incorpore as alterações dos arquivos envolvidos por comparação, respeitando a localização do módulo. |
 
 “Ter uma cópia” não comprova que ela seja um fork. O GitHub informa o repositório de origem na página de um fork; no caso de um template, a nova cópia começa com seu próprio commit inicial. Veja [criar um repositório a partir de um template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+Preservar uma base Git comum pode facilitar integrações para quem utiliza essas ferramentas, mas também leva o histórico anterior, incluindo arquivos já removidos. Essa alternativa não garante integração automática de personalizações e não exige converter as cópias pessoais que já existem. Veja [duplicar um repositório preservando seu histórico](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository). A duplicação é a preparação inicial; nas atualizações, integre as mudanças preservando seu trabalho. Espelhar periodicamente o vanilla sobre o repositório pessoal pode substituir suas referências e não é o procedimento de atualização de uma cópia preenchida.
 
 ## Incorporar uma atualização
 
